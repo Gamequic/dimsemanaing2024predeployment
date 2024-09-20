@@ -1,0 +1,28 @@
+.table-container {
+  padding: 1rem;
+}
+
+.search-input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table th, .styled-table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #f4f4f4;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
