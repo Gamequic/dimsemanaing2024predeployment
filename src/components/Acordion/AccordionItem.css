@@ -1,0 +1,9 @@
+.AcordionButon {
+    border-radius: 1rem;
+}
+
+.accordion-content {
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: max-height 0.8s ease;
+}

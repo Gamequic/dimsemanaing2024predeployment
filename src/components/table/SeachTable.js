@@ -1,11 +1,12 @@
-import React, { useState, useMemo } from 'react';
-import { useTable, useGlobalFilter } from 'react-table';
+import React, { useMemo } from 'react';
+// import { useTable, useGlobalFilter } from 'react-table';
+import { useTable } from 'react-table';
 import AccordionItem from '../Acordion/Acordion';
 
 import './SearchTable.css'
 
 const SearchTable = ({ data, title }) => {
-  const [searchInput, setSearchInput] = useState('');
+  // const [searchInput, setSearchInput] = useState('');
 
   // Define columns
   const columns = useMemo(
@@ -30,15 +31,16 @@ const SearchTable = ({ data, title }) => {
     headerGroups,
     rows,
     prepareRow,
-    setGlobalFilter,
-  } = useTable({ columns, data }, useGlobalFilter);
+    // setGlobalFilter,
+  // } = useTable({ columns, data }, useGlobalFilter);
+  } = useTable({ columns, data });
 
   // Handle search input
-  const handleSearch = (e) => {
-    const value = e.target.value || '';
-    setSearchInput(value);
-    setGlobalFilter(value);
-  };
+  // const handleSearch = (e) => {
+  //   const value = e.target.value || '';
+  //   setSearchInput(value);
+  //   setGlobalFilter(value);
+  // };
 
   return (
     <>
@@ -47,12 +49,12 @@ const SearchTable = ({ data, title }) => {
       >
         <div className="table-container">
           {/* Search input */}
-          <input
+          {/* <input
             value={searchInput}
             onChange={handleSearch}
             placeholder="Search..."
             className="search-input"
-          />
+          /> */}
 
           {/* Table */}
           <table {...getTableProps()} className="styled-table">
