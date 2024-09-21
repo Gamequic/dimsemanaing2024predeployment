@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dimsemanaing2024predeployment/static/css/main.ca75a04e.css",
+    "main.js": "/dimsemanaing2024predeployment/static/js/main.dc2f8d64.js",
+    "static/js/453.4b7b40c9.chunk.js": "/dimsemanaing2024predeployment/static/js/453.4b7b40c9.chunk.js",
+    "index.html": "/dimsemanaing2024predeployment/index.html",
+    "main.ca75a04e.css.map": "/dimsemanaing2024predeployment/static/css/main.ca75a04e.css.map",
+    "main.dc2f8d64.js.map": "/dimsemanaing2024predeployment/static/js/main.dc2f8d64.js.map",
+    "453.4b7b40c9.chunk.js.map": "/dimsemanaing2024predeployment/static/js/453.4b7b40c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca75a04e.css",
+    "static/js/main.dc2f8d64.js"
+  ]
+}
