@@ -1,9 +1,17 @@
 .AcordionButon {
     border-radius: 1rem;
+    transition: border-radius 0.2s ease;
+}
+
+.ButonOpen {
+    border-radius: 1rem 1rem 0rem 0rem;
+    transition: border-radius 0.2s ease;
 }
 
 .accordion-content {
     overflow-x: auto;
     overflow-y: hidden;
     transition: max-height 0.8s ease;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 0rem 0rem 1rem 1rem;
 }

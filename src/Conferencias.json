@@ -404,261 +404,179 @@
             "Unnamed: 10": null,
             "Unnamed: 11": null,
             "Unnamed: 12": null
-        },
+        }
+    ],
+    "25 SEPTIEMBRE CONREDES": [
         {
-            "PROGRAMA": null,
-            "CONFERENCIA": "EVENTO CONREDES",
-            "FECHA": null,
-            "HORA": null,
-            "LUGAR": null,
-            "CONFERENCISTA": null,
-            "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
-        },
-        {
-            "PROGRAMA": null,
             "CONFERENCIA": "Apertura",
             "FECHA": "2024-09-25",
             "HORA": "9:00 a 9:20 am",
             "LUGAR": "Macro Aula C1",
             "CONFERENCISTA": null,
             "EMPRESA": "Itzel Parra Pérez, Jesus Eduardo Barragan Rey, Paola Alejandra Salazar Perez",
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": "WISBRUN",
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": "WISBRUN"
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Mujeres en STEM",
             "FECHA": "2024-09-25",
             "HORA": "9:20 a 10:10 a.m",
             "LUGAR": "Macro Aula C1",
             "CONFERENCISTA": "Beatriz Aguirre (UTCJ), lzza Rodríguez (J&J), Ashley Belman (UTPN)",
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Descanso",
             "FECHA": "2024-09-25",
             "HORA": "10:10 a 10:30",
             "LUGAR": "Macro Aula C1",
             "CONFERENCISTA": null,
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Aplicación l&D en la Industria",
             "FECHA": "2024-09-25",
             "HORA": "10:30 a 11:20 a.m. ",
             "LUGAR": "Macro Aula C1",
             "CONFERENCISTA": "Dr. Juan Hernández (UACJ)",
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
+            "CONFERENCIA": null,
+            "FECHA": null,
+            "HORA": null,
+            "LUGAR": null,
+            "CONFERENCISTA": null,
+            "EMPRESA": null,
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
+        },
+        {
             "CONFERENCIA": "Apertura",
             "FECHA": "2024-09-25",
             "HORA": "4:00 a 4:20",
             "LUGAR": "Macro Aula C1",
             "CONFERENCISTA": null,
             "EMPRESA": "Alejandro Loya Puga, Issac Alejandro Ramirez Contreras",
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": "TONY",
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": "TONY"
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Mujeres en STEM ",
             "FECHA": "2024-09-25",
             "HORA": "4:20 - 5:10  ",
             "LUGAR": "Macro Aula C1",
             "CONFERENCISTA": "Dra. Alejandra Flores (UACJ), Fernando Rico (UACJ), Diana Núñez (J&J)",
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Descanso",
             "FECHA": "2024-09-25",
             "HORA": "5:10 a 5:30",
             "LUGAR": "Macro Aula C1",
             "CONFERENCISTA": null,
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Aplicación l&D en la Industria ",
             "FECHA": "2024-09-25",
             "HORA": "5:30 - 6:20 p.m. ",
             "LUGAR": "Macro Aula C1",
             "CONFERENCISTA": "Jesús Terrazas (APTIV) ",
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
+            "CONFERENCIA": null,
+            "FECHA": null,
+            "HORA": null,
+            "LUGAR": null,
+            "CONFERENCISTA": null,
+            "EMPRESA": null,
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
+        },
+        {
             "CONFERENCIA": "Apertura",
             "FECHA": "2024-09-25",
             "HORA": "9:00 a 9:20 am",
             "LUGAR": "Macro Aula D1",
             "CONFERENCISTA": null,
             "EMPRESA": "Irving Pérez Huizar, Leslie Yamilee Rodriguez Cota, Jose Daniel Sanchez Morales",
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": "OSEL",
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": "OSEL"
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Solución de problemas STEM ",
             "FECHA": "2024-09-25",
             "HORA": "9:20 a 10:10 a.m",
             "LUGAR": "Macro Aula D1",
             "CONFERENCISTA": "David Muñoz ( GE HealthCare) ",
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Descanso",
             "FECHA": "2024-09-25",
             "HORA": "10:10 a 10:30",
             "LUGAR": "Macro Aula D1",
             "CONFERENCISTA": null,
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Tendencias en la Industria 4.0",
             "FECHA": "2024-09-25",
             "HORA": "10:30 a 11:20 a.m. ",
             "LUGAR": "Macro Aula D1",
             "CONFERENCISTA": "Jorge Dayer (J&J) ",
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
+            "CONFERENCIA": null,
+            "FECHA": null,
+            "HORA": null,
+            "LUGAR": null,
+            "CONFERENCISTA": null,
+            "EMPRESA": null,
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
+        },
+        {
             "CONFERENCIA": "Apertura",
             "FECHA": "2024-09-25",
             "HORA": "4:00 a 4:20",
             "LUGAR": "Macro Aula D1",
             "CONFERENCISTA": null,
             "EMPRESA": "Manuel Pizarro León, Alvaro Cortinas Gonzalez",
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": "DAVID",
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": "DAVID"
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Solución de problemas STEM ",
             "FECHA": "2024-09-25",
             "HORA": "4:20 - 5:10  ",
             "LUGAR": "Macro Aula D1",
             "CONFERENCISTA": "Jarvy Bustos (Bosch.) ",
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Descanso",
             "FECHA": "2024-09-25",
             "HORA": "5:10 a 5:30",
             "LUGAR": "Macro Aula D1",
             "CONFERENCISTA": null,
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         },
         {
-            "PROGRAMA": null,
             "CONFERENCIA": "Tendencias en la Industria 4.0 ",
             "FECHA": "2024-09-25",
             "HORA": "5:30 - 6:20 p.m. ",
             "LUGAR": "Macro Aula D1",
             "CONFERENCISTA": "Ulises lrigoyen (Lexmark)",
             "EMPRESA": null,
-            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
-            "Liga": null,
-            "APOYO TECNICO": null,
-            "Unnamed: 10": null,
-            "Unnamed: 11": null,
-            "Unnamed: 12": null
+            "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null
         }
     ],
     "26 SEPTIEMBRE": [

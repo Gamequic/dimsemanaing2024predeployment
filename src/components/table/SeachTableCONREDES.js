@@ -5,21 +5,17 @@ import AccordionItem from '../Acordion/Acordion';
 
 import './SearchTable.css'
 
-const SearchTable = ({ data, title, children, CONREDES }) => {
+const SearchTableCONREDES = ({ data, title, children, CONREDES }) => {
   // const [searchInput, setSearchInput] = useState('');
 
   // Define columns
   const columns = useMemo(
     () => [
-      { Header: 'Programa', accessor: 'PROGRAMA' },
       { Header: 'Conferencia', accessor: 'CONFERENCIA' },
       { Header: 'Fecha', accessor: 'FECHA' },
       { Header: 'Hora', accessor: 'HORA' },
       { Header: 'Lugar', accessor: 'LUGAR' },
-      { Header: 'Conferencista', accessor: 'CONFERENCISTA' },
-      { Header: 'Empresa', accessor: 'EMPRESA' },
-      { Header: 'Maestros de Ceremonias', accessor: 'MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA' },
-      { Header: 'Liga', accessor: 'Liga' },
+      { Header: 'Conferencista', accessor: 'CONFERENCISTA' }
     ],
     []
   );  
@@ -87,4 +83,4 @@ const SearchTable = ({ data, title, children, CONREDES }) => {
   );
 };
 
-export default SearchTable;
+export default SearchTableCONREDES;

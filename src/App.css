@@ -31,14 +31,6 @@ html, body {
   min-height: 100vh;
 }
 
-.Background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  background: linear-gradient(180deg, rgba(37, 37, 37, 0.4), rgba(90, 103, 120, 0.4));
-}
-
 .backgroundDecoration {
   position: fixed;
   width: 100px;
@@ -46,7 +38,6 @@ html, body {
   border-radius: 100px;
   z-index: -1;
   filter: blur(65px);
-
 }
 
 main {

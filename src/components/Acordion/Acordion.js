@@ -13,7 +13,8 @@ const AccordionItem = ({ title, children }) => {
         <div style={{margin: '1rem'}}>
             <div 
                 onClick={toggleAccordion}
-                className='AcordionButon'
+                className={`AcordionButon ${isOpen ? 'ButonOpen' : ''}`} 
+                
                 style={{ 
                     cursor: 'pointer', 
                     padding: '10px', 
