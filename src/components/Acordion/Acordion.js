@@ -6,15 +6,14 @@ const AccordionItem = ({ title, children }) => {
     const contentRef = useRef(null);
 
     const toggleAccordion = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(prev => !prev);
     };
 
     return (
-        <div style={{margin: '1rem'}}>
+        <div style={{ margin: '1rem' }}>
             <div 
                 onClick={toggleAccordion}
                 className={`AcordionButon ${isOpen ? 'ButonOpen' : ''}`} 
-                
                 style={{ 
                     cursor: 'pointer', 
                     padding: '10px', 
@@ -32,7 +31,13 @@ const AccordionItem = ({ title, children }) => {
             <div 
                 className={`accordion-content ${isOpen ? 'open' : ''}`} 
                 ref={contentRef}
-                style={{ maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : '0' }}
+                style={{ 
+                    maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : '0',
+                    overflowX: 'auto',  // Permitir desplazamiento horizontal
+                    overflowY: 'hidden',
+                    transition: 'max-height 0.8s ease',
+                    width: '100%', // Asegurarse de que use todo el ancho disponible
+                }}
             >
                 {children}
             </div>
@@ -41,3 +46,4 @@ const AccordionItem = ({ title, children }) => {
 };
 
 export default AccordionItem;
+

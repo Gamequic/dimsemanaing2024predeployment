@@ -1,11 +1,16 @@
 import React, { useMemo } from 'react';
 // import { useTable, useGlobalFilter } from 'react-table';
+
 import { useTable } from 'react-table';
-import AccordionItem from '../Acordion/Acordion';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 import './SearchTable.css'
 
-const SearchTableCONREDES = ({ data, title, children, CONREDES }) => {
+const SearchTableCONREDES = ({ data, title, children }) => {
   // const [searchInput, setSearchInput] = useState('');
 
   // Define columns
@@ -40,45 +45,52 @@ const SearchTableCONREDES = ({ data, title, children, CONREDES }) => {
 
   return (
     <>
-      <AccordionItem
-        title={title}
-      >
-        <div className="table-container">
-          {/* Search input */}
-          {/* <input
-            value={searchInput}
-            onChange={handleSearch}
-            placeholder="Search..."
-            className="search-input"
-          /> */}
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1-content"
+          id="panel1-header"
+        >
+          {title}
+        </AccordionSummary>
+        <AccordionDetails>
+          <div className="table-container">
+            {/* Search input */}
+            {/* <input
+              value={searchInput}
+              onChange={handleSearch}
+              placeholder="Search..."
+              className="search-input"
+            /> */}
 
-          {/* Table */}
-          <table {...getTableProps()} className="styled-table">
-            <thead>
-              {headerGroups.map(headerGroup => (
-                <tr {...headerGroup.getHeaderGroupProps()}>
-                  {headerGroup.headers.map(column => (
-                    <th {...column.getHeaderProps()}>{column.render('Header')}</th>
-                  ))}
-                </tr>
-              ))}
-            </thead>
-            <tbody {...getTableBodyProps()}>
-              {rows.map(row => {
-                prepareRow(row);
-                return (
-                  <tr {...row.getRowProps()}>
-                    {row.cells.map(cell => (
-                      <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+            {/* Table */}
+            <table {...getTableProps()} className="styled-table">
+              <thead>
+                {headerGroups.map(headerGroup => (
+                  <tr {...headerGroup.getHeaderGroupProps()}>
+                    {headerGroup.headers.map(column => (
+                      <th {...column.getHeaderProps()}>{column.render('Header')}</th>
                     ))}
                   </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-        {children}
-      </AccordionItem>
+                ))}
+              </thead>
+              <tbody {...getTableBodyProps()}>
+                {rows.map(row => {
+                  prepareRow(row);
+                  return (
+                    <tr {...row.getRowProps()}>
+                      {row.cells.map(cell => (
+                        <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                      ))}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          {children}
+        </AccordionDetails>
+      </Accordion>
     </>
   );
 };

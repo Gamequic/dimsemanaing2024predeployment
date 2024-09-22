@@ -1,88 +1,80 @@
-import React, { useMemo } from 'react';
-// import { useTable, useGlobalFilter } from 'react-table';
+import React from 'react';
 import { useTable } from 'react-table';
-import AccordionItem from '../Acordion/Acordion';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import './SearchTable.css'
+import './SearchTable.css';
 
-const SearchTable = ({ data, title, children, CONREDES }) => {
-  // const [searchInput, setSearchInput] = useState('');
+const SearchTable = ({ data, title, children, visibleColumns, setVisibleColumns, columns }) => {
+  const toggleColumn = (column) => {
+    setVisibleColumns((prev) => ({
+      ...prev,
+      [column]: !prev[column],
+    }));
+  };
 
-  // Define columns
-  const columns = useMemo(
-    () => [
-      { Header: 'Programa', accessor: 'PROGRAMA' },
-      { Header: 'Conferencia', accessor: 'CONFERENCIA' },
-      { Header: 'Fecha', accessor: 'FECHA' },
-      { Header: 'Hora', accessor: 'HORA' },
-      { Header: 'Lugar', accessor: 'LUGAR' },
-      { Header: 'Conferencista', accessor: 'CONFERENCISTA' },
-      { Header: 'Empresa', accessor: 'EMPRESA' },
-      { Header: 'Maestros de Ceremonias', accessor: 'MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA' },
-      { Header: 'Liga', accessor: 'Liga' },
-    ],
-    []
-  );  
 
-  // Set up table with data and columns
   const {
     getTableProps,
     getTableBodyProps,
     headerGroups,
     rows,
     prepareRow,
-    // setGlobalFilter,
-  // } = useTable({ columns, data }, useGlobalFilter);
   } = useTable({ columns, data });
-
-  // Handle search input
-  // const handleSearch = (e) => {
-  //   const value = e.target.value || '';
-  //   setSearchInput(value);
-  //   setGlobalFilter(value);
-  // };
 
   return (
     <>
-      <AccordionItem
-        title={title}
-      >
-        <div className="table-container">
-          {/* Search input */}
-          {/* <input
-            value={searchInput}
-            onChange={handleSearch}
-            placeholder="Search..."
-            className="search-input"
-          /> */}
-
-          {/* Table */}
-          <table {...getTableProps()} className="styled-table">
-            <thead>
-              {headerGroups.map(headerGroup => (
-                <tr {...headerGroup.getHeaderGroupProps()}>
-                  {headerGroup.headers.map(column => (
-                    <th {...column.getHeaderProps()}>{column.render('Header')}</th>
-                  ))}
-                </tr>
-              ))}
-            </thead>
-            <tbody {...getTableBodyProps()}>
-              {rows.map(row => {
-                prepareRow(row);
-                return (
-                  <tr {...row.getRowProps()}>
-                    {row.cells.map(cell => (
-                      <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1-content"
+          id="panel1-header"
+        >
+          {title}
+        </AccordionSummary>
+        <AccordionDetails>
+          <div className="column-controls">
+            {Object.keys(visibleColumns).map(column => (
+              <label key={column}>
+                <input
+                  type="checkbox"
+                  checked={visibleColumns[column]}
+                  onChange={() => toggleColumn(column)}
+                />
+                {column}
+              </label>
+            ))}
+          </div>
+          <div className="table-container">
+            <table {...getTableProps()} className="styled-table">
+              <thead>
+                {headerGroups.map(headerGroup => (
+                  <tr {...headerGroup.getHeaderGroupProps()}>
+                    {headerGroup.headers.map(column => (
+                      <th {...column.getHeaderProps()}>{column.render('Header')}</th>
                     ))}
                   </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-        {children}
-      </AccordionItem>
+                ))}
+              </thead>
+              <tbody {...getTableBodyProps()}>
+                {rows.map(row => {
+                  prepareRow(row);
+                  return (
+                    <tr {...row.getRowProps()}>
+                      {row.cells.map(cell => (
+                        <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                      ))}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          {children}
+        </AccordionDetails>
+      </Accordion>
     </>
   );
 };

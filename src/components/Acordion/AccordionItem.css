@@ -9,9 +9,11 @@
 }
 
 .accordion-content {
-    overflow-x: auto;
-    overflow-y: hidden;
-    transition: max-height 0.8s ease;
     background-color: rgba(0, 0, 0, 0.15);
     border-radius: 0rem 0rem 1rem 1rem;
+    padding: 1rem; /* Ajusta el padding según sea necesario */
+    max-height: none; /* Eliminar limitación de altura */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    overflow-y: hidden; /* Ocultar el desplazamiento vertical */
+    white-space: nowrap; /* Evitar que el contenido se ajuste a múltiples líneas */
 }

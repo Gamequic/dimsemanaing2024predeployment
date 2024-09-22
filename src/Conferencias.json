@@ -23,15 +23,15 @@
           "Liga": null
       },
       {
-          "PROGRAMA": "PROGRAMA",
-          "CONFERENCIA": "CONFERENCIA",
-          "FECHA": "FECHA",
-          "HORA": "HORA",
-          "LUGAR": "LUGAR",
-          "CONFERENCISTA": "CONFERENCISTA",
-          "EMPRESA": "EMPRESA",
-          "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA",
-          "Liga": "Liga"
+          "PROGRAMA": null,
+          "CONFERENCIA": null,
+          "FECHA": null,
+          "HORA": null,
+          "LUGAR": null,
+          "CONFERENCISTA": null,
+          "EMPRESA": null,
+          "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
+          "Liga": null
       },
       {
           "PROGRAMA": "Ingeniería Aeronáutica",
@@ -100,15 +100,15 @@
           "Liga": null
       },
       {
-          "PROGRAMA": "PROGRAMA",
-          "CONFERENCIA": "CONFERENCIA",
-          "FECHA": "FECHA",
-          "HORA": "HORA",
-          "LUGAR": "LUGAR",
-          "CONFERENCISTA": "CONFERENCISTA",
-          "EMPRESA": "EMPRESA",
-          "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA",
-          "Liga": "Liga"
+          "PROGRAMA": null,
+          "CONFERENCIA": null,
+          "FECHA": null,
+          "HORA": null,
+          "LUGAR": null,
+          "CONFERENCISTA": null,
+          "EMPRESA": null,
+          "MAESTROS DE CEREMONIAS Y RESPONSABLES DE CONFERENCIA": null,
+          "Liga": null
       },
       {
           "PROGRAMA": "Ingeniería Industrial y de Sistemas;Ingeniería en Sistemas Computacionales;Ingeniería de Software",

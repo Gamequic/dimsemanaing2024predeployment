@@ -1,43 +1,41 @@
 import pandas as pd
 import json
 import numpy as np
-import datetime
 
-# Cargar el archivo Excel
-file_path = './CONFERENCIAS.xlsx'  # Cambia esto a la ruta de tu archivo
+# Ruta del archivo Excel
+excel_file = './CONFERENCIAS v2.xlsx'
 
-# Cargar todas las hojas del archivo Excel como DataFrames en un diccionario
-sheets_dict = pd.read_excel(file_path, sheet_name=None, engine='openpyxl')
+# Lee los datos de todas las hojas del archivo Excel
+sheets_dict = pd.read_excel(excel_file, sheet_name=None)
 
-# Función para convertir tipos no serializables a un formato compatible con JSON
-def convert_to_serializable(val):
-    # Si es de tipo pandas Timestamp o numpy datetime64
-    if isinstance(val, (pd.Timestamp, np.datetime64)):
-        return val.strftime('%Y-%m-%d')  # Convertir fechas a formato 'YYYY-MM-DD'
-    
-    # Si es de tipo datetime.datetime (caso adicional)
-    elif isinstance(val, datetime.datetime):
-        return val.strftime('%Y-%m-%d')  # Convertir también fechas datetime
-    
-    # Convertir NaN a None (nulo en JSON)
-    elif pd.isna(val):
-        return None
-    
-    return val  # Devolver el valor tal como es si no es un tipo especial
+# Inicializa un diccionario para almacenar los datos de todas las hojas
+all_sheets_data = {}
 
-# Crear un diccionario para almacenar los datos en formato JSON
-json_data = {}
-
-# Recorrer cada hoja del archivo
+# Recorre cada hoja
 for sheet_name, df in sheets_dict.items():
-    # Aplicar la conversión de valores no serializables en todo el DataFrame
-    df = df.applymap(convert_to_serializable)
+    # Convierte todas las columnas de tipo fecha (datetime) a string
+    for column in df.columns:
+        if pd.api.types.is_datetime64_dtype(df[column]):
+            df[column] = df[column].dt.strftime('%Y-%m-%d %H:%M:%S')  # Formato de fecha como cadena
+
+    # Convierte NaN y celdas vacías a 'undefined'
+    df = df.fillna('')  # Reemplaza NaN por 'undefined'
+    df.replace('', '', inplace=True)  # Reemplaza celdas vacías por 'undefined'
     
-    # Convertir cada hoja a JSON y almacenarla en el diccionario
-    json_data[sheet_name] = df.to_dict(orient='records')
+    # Convierte todos los valores a string
+    df = df.astype(str)
 
-# Guardar el diccionario como un archivo JSON
-with open('output.json', 'w', encoding='utf-8') as json_file:
-    json.dump(json_data, json_file, ensure_ascii=False, indent=4)
+    # Convierte el DataFrame a un diccionario
+    data_dict = df.to_dict(orient='records')
+    
+    # Agrega los datos al diccionario principal bajo el nombre de la hoja
+    all_sheets_data[sheet_name] = data_dict
 
-print("Los datos se han exportado exitosamente a 'output.json'")
+# Ruta del archivo JSON de salida
+json_file_path = 'archivo.json'
+
+# Guarda el diccionario como un archivo JSON
+with open(json_file_path, 'w', encoding='utf-8') as json_file:
+    json.dump(all_sheets_data, json_file, ensure_ascii=False, indent=4)
+
+print(f'Datos exportados a {json_file_path}')
